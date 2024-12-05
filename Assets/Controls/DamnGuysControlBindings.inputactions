@@ -1,0 +1,54 @@
+{
+    "name": "DamnGuysControlBindings",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "0453c939-b037-456f-82b1-fccd3d36f13e",
+            "actions": [
+                {
+                    "name": "PlayerOneInput",
+                    "type": "Button",
+                    "id": "ceb8f355-1403-48a9-9894-ce302251fdf3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PlayerTwoInput",
+                    "type": "Button",
+                    "id": "6d71f65e-9733-4b85-a540-4217a9a2c360",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "46e41433-c09f-4a97-b0c6-ac3eab8e7de8",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlayerTwoInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a1eab5c-9475-467f-bb1a-bb11533f5533",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlayerOneInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
