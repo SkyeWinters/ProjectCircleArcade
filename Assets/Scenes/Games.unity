@@ -639,6 +639,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleText: {fileID: 706753085}
   _screenshot: {fileID: 1236584680}
+  _onSelect:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &161396127
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296138150}
   - component: {fileID: 296138151}
+  - component: {fileID: 296138152}
   m_Layer: 5
   m_Name: Game Layout
   m_TagString: Untagged
@@ -998,6 +1002,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleText: {fileID: 544712210}
   _screenshot: {fileID: 1690690894}
+  _onSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 296138152}
+        m_TargetAssemblyTypeName: DamnGuys.Utilities.JavaScriptCommunicator, Assembly-CSharp
+        m_MethodName: SwitchToGame
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &296138152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296138149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b801ec66c4b84afa85230d3a2edc3995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &298409969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2071,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleText: {fileID: 138964294}
   _screenshot: {fileID: 2028189465}
+  _onSelect:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &706753083
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2722,6 @@ GameObject:
   - component: {fileID: 958377051}
   - component: {fileID: 958377050}
   - component: {fileID: 958377052}
-  - component: {fileID: 958377053}
   m_Layer: 5
   m_Name: Bottom Half
   m_TagString: Untagged
@@ -2776,78 +2809,12 @@ MonoBehaviour:
   - {fileID: 1432595058}
   - {fileID: 1928970425}
   _options:
-  - _type: 3
-    _title: Working Title
-    _volume: {fileID: 0}
-    _bool: {fileID: 0}
-    _action:
-      m_PersistentCalls:
-        m_Calls: []
-    _gameIndex: 1
-    _screenshot: {fileID: 21300000, guid: ad5a20ad70be51243a5938d8bde5fb9a, type: 3}
-    _switchEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 958377053}
-          m_TargetAssemblyTypeName: DamnGuys.Utilities.JavaScriptCommunicator, Assembly-CSharp
-          m_MethodName: SwitchToGame
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _type: 3
-    _title: Space Game
-    _volume: {fileID: 0}
-    _bool: {fileID: 0}
-    _action:
-      m_PersistentCalls:
-        m_Calls: []
+  - _title: Working Title
     _gameIndex: 2
+    _screenshot: {fileID: 21300000, guid: ad5a20ad70be51243a5938d8bde5fb9a, type: 3}
+  - _title: Space Game
+    _gameIndex: 3
     _screenshot: {fileID: 0}
-    _switchEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 958377053}
-          m_TargetAssemblyTypeName: DamnGuys.Utilities.JavaScriptCommunicator, Assembly-CSharp
-          m_MethodName: SwitchToGame
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _type: 3
-    _title: 
-    _volume: {fileID: 0}
-    _bool: {fileID: 0}
-    _action:
-      m_PersistentCalls:
-        m_Calls: []
-    _gameIndex: 0
-    _screenshot: {fileID: 0}
-    _switchEvent:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!114 &958377053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958377047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b801ec66c4b84afa85230d3a2edc3995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &964252302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3373,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleText: {fileID: 1223141811}
   _screenshot: {fileID: 251006675}
+  _onSelect:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1015442670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4173,6 +4143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleText: {fileID: 481822541}
   _screenshot: {fileID: 135032492}
+  _onSelect:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1343132213
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,6 +4277,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleText: {fileID: 1955857438}
   _screenshot: {fileID: 222685079}
+  _onSelect:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1432595053
 GameObject:
   m_ObjectHideFlags: 0
@@ -5782,30 +5758,12 @@ MonoBehaviour:
   - {fileID: 1774550754}
   - {fileID: 517366049}
   _options:
-  - _type: 3
-    _title: Working Title
-    _volume: {fileID: 0}
-    _bool: {fileID: 0}
-    _action:
-      m_PersistentCalls:
-        m_Calls: []
+  - _title: Working Title
     _gameIndex: 0
     _screenshot: {fileID: 21300000, guid: ad5a20ad70be51243a5938d8bde5fb9a, type: 3}
-    _switchEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - _type: 3
-    _title: Space Game
-    _volume: {fileID: 0}
-    _bool: {fileID: 0}
-    _action:
-      m_PersistentCalls:
-        m_Calls: []
+  - _title: Space Game
     _gameIndex: 1
     _screenshot: {fileID: 0}
-    _switchEvent:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!224 &1818657591
 RectTransform:
   m_ObjectHideFlags: 0

@@ -10,16 +10,15 @@ namespace DamnGuys.Menus
     {
         [SerializeField] private TMP_Text _titleText;
         [SerializeField] private Image _screenshot;
+        [SerializeField] private UnityEvent<int> _onSelect;
 
         private int _gameIndex;
-        private UnityEvent<int> _onSelect;
 
         public override void Show(GameSetting setting)
         {
             _titleText.text = setting.Title;
             _gameIndex = setting.GameIndex;
             _screenshot.sprite = setting.Screenshot;
-            _onSelect = setting.SwitchEvent;
             gameObject.SetActive(true);
         }
 
@@ -31,7 +30,7 @@ namespace DamnGuys.Menus
 
         public override void OnInput()
         {
-            _onSelect?.Invoke(_gameIndex);
+            _onSelect?.Invoke(_gameIndex - 1);
         }
     }
 }
