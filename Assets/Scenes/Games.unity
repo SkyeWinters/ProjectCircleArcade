@@ -2810,13 +2810,13 @@ MonoBehaviour:
   - {fileID: 1928970425}
   _options:
   - _title: Working Title
-    _gameIndex: 1
+    _gameIndex: 2
     _screenshot: {fileID: 21300000, guid: ad5a20ad70be51243a5938d8bde5fb9a, type: 3}
   - _title: Space Game
-    _gameIndex: 2
+    _gameIndex: 3
     _screenshot: {fileID: 0}
   - _title: Froggy
-    _gameIndex: 3
+    _gameIndex: 4
     _screenshot: {fileID: 0}
 --- !u!1 &964252302
 GameObject:
@@ -5762,13 +5762,13 @@ MonoBehaviour:
   - {fileID: 517366049}
   _options:
   - _title: Working Title
-    _gameIndex: 0
+    _gameIndex: 2
     _screenshot: {fileID: 21300000, guid: ad5a20ad70be51243a5938d8bde5fb9a, type: 3}
   - _title: Space Game
-    _gameIndex: 1
+    _gameIndex: 3
     _screenshot: {fileID: 0}
   - _title: Froggy
-    _gameIndex: 2
+    _gameIndex: 4
     _screenshot: {fileID: 0}
 --- !u!224 &1818657591
 RectTransform:
