@@ -36,7 +36,7 @@ namespace DamnGuys.InputEvents
             Controller.OnNotePressed -= OnInput;
         }
         
-        private void OnInput(Controller.PlayerBinding input, bool isPressed)
+        public void OnInput(Controller.PlayerBinding input, bool isPressed)
         {
             switch (input)
             {

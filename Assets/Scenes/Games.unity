@@ -1728,6 +1728,37 @@ MonoBehaviour:
       Entry: 8
       Data: 
   _defaultDisplay: {fileID: 661538340}
+--- !u!1 &528490550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 528490552}
+  m_Layer: 0
+  m_Name: Fullscreener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &528490552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528490550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544712208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,6 +5877,7 @@ GameObject:
   - component: {fileID: 1820186996}
   - component: {fileID: 1820186995}
   - component: {fileID: 1820186994}
+  - component: {fileID: 1820187000}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -5985,6 +6017,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1820187000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820186993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829d2431f6146549163e9cc6d52af4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputEventManager: {fileID: 1820186994}
 --- !u!1 &1847416653
 GameObject:
   m_ObjectHideFlags: 0
